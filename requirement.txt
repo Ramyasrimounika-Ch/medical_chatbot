@@ -1,0 +1,8 @@
+ctransformers==0.2.27
+sentence-transformers==4.1.0
+pypdf==5.6.0
+faiss-cpu==1.11.0
+langchain==0.3.25
+langchain_community==0.3.25
+flask==3.1.1
+
