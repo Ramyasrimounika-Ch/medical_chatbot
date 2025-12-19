@@ -30,7 +30,7 @@ llm = CTransformers(
 qa=RetrievalQA.from_chain_type(
     llm=llm, 
     chain_type="stuff", 
-    retriever=db.as_retriever(search_kwargs={'k': 2}),
+    retriever=db.as_retriever(search_kwargs={'k': 1}),
     return_source_documents=True, 
     chain_type_kwargs=chain_type_kwargs)
 
@@ -55,4 +55,5 @@ def chat():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port= 8080, debug= True)
+
 
